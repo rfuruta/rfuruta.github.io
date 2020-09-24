@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../../css/mycss.css" rel="stylesheet">
+
+    <title>Fully Convolutional Network with Multi-Step Reinforcement Learning for Image Processing</title>    
+</head>
+
+
+
+<body>
+    <div class="container" style="max-width: 900px;">
+        
+
+
+<h5 class="text-center"><em><a href="https://aaai.org/Conferences/AAAI-19/">AAAI-19: Thirty-Third AAAI Conference on Artificial Intelligence</a></em></h5>
+<h5 class="text-center"><em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">TMM: IEEE Transactions on Multimedia</a></em></h5>
+
+
+        
+<h3 class="text-center">Fully Convolutional Network with Multi-Step Reinforcement Learning<br>for Image Processing</h3>
+
+
+<div class="row">
+            
+    <div class="col-md-4">
+        <h4 class="text-center"><a href="../../">Ryosuke Furuta</a></h4>
+    </div>
+    <div class="col-md-4">
+        <h4 class="text-center"><a href="https://naoto0804.github.io/">Naoto Inoue</a></h4>
+    </div>
+    <div class="col-md-4">
+        <h4 class="text-center"><a href="http://www.hal.t.u-tokyo.ac.jp/~yamasaki/index-e.html">Toshihiko Yamasaki</a></h4>
+    </div>
+        
+</div>
+
+
+<h4 class="text-center">The University of Tokyo</h4>
+
+<br>
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="text-center"><img src="img/teaser.png" class="img-responsive"></p>        
+        <p class="text-center">The proposed pixelRL is applied to three applications: image denoising, image restoration, and local color enhancement.</p>
+    </div>
+</div>        
+<br>
+                
+<div class="row">
+    <div class="col-md-12">
+        <p class="text-center"><img src="img/trans_denoise_sp90.png" class="img-responsive"></p>           
+        <p class="text-center">Denoising process of the proposed method and the action map at each time step for salt and pepper denoising (density=0.9).</p>
+    </div>
+</div>
+<br>
+
+<div class="row">      
+    <div class="col-md-12">
+        <p class="text-center"><img src="img/trans_color.png" class="img-responsive"></p>                
+        <p class="text-center">Color enhancement process of the proposed method for watercolor, and the action map at each time step.</p>        
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="text-center"><video src="img/teaser.mp4" video controls class="img-responsive"></p>        
+        <p class="text-center">Application to blind image restoration.</p>
+    </div>
+</div>        
+<br>
+
+
+<h4>Abstract</h4>
+<div class="row">
+    <div class="col-md-12">
+                
+        <p>This paper tackles a new problem setting: reinforcement learning with pixel-wise rewards (<i>pixelRL</i>) for image processing.
+After the introduction of the deep Q-network, deep RL has been achieving great success.
+However, the applications of deep RL for image processing are still limited.
+Therefore, we extend deep RL to pixelRL for various image processing applications.
+In pixelRL, each pixel has an agent, and the agent changes the pixel value by taking an action.
+We also propose an effective learning method for pixelRL that significantly improves the performance by considering not only the future states of the own pixel but also those of the neighbor pixels.
+The proposed method can be applied to some image processing tasks that require pixel-wise manipulations, where deep RL has never been applied.
+
+We apply the proposed method to three image processing tasks: image denoising, image restoration, and local color enhancement.
+Our experimental results demonstrate that the proposed method achieves comparable or better performance, compared with the state-of-the-art methods based on supervised learning.             
+        </p>
+        
+    </div>
+</div>
+
+
+
+<h4>Links</h4>
+<ul>
+            
+    <li><a href="https://arxiv.org/abs/1811.04323">Conference Paper (arXiv)</a></li>
+    <li><a href="https://aaai.org/ojs/index.php/AAAI/article/view/4240">Conference Paper (Proceedings)</a></li>
+    <li><a href="https://arxiv.org/abs/1912.07190">Journal Paper (arXiv)</a></li>
+    <li><a href="https://ieeexplore.ieee.org/document/8936404">Journal Paper (IEEE Xplore)</a></li>
+    <li><a href="https://github.com/rfuruta/pixelRL">Code</a></li>
+    
+</ul>
+
+
+
+<h4>Publication</h4>
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li>Ryosuke Furuta, Naoto Inoue, and Toshihiko Yamasaki. <br>
+                <strong>Fully Convolutional Network with Multi-Step Reinforcement Learning for Image Processing.</strong><br>
+                <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2019.<br>
+            </li>
+            <li>Ryosuke Furuta, Naoto Inoue, and Toshihiko Yamasaki. <br>
+                <strong>PixelRL: Fully Convolutional Network with Multi-Step Reinforcement Learning for Image Processing.</strong><br>
+                <em>IEEE Transactions on Multimedia (TMM)</em>, 2020.<br>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--         
+ -->
+
+
+
+<h4>BibTeX</h4>
+<div class="row">
+    <div class="col-md-12">
+        <pre>@inproceedings{aaai_furuta_2019,
+    author={Ryosuke Furuta and Naoto Inoue and Toshihiko Yamasaki},
+    title={Fully Convolutional Network with Multi-Step Reinforcement Learning for Image Processing},
+    booktitle={AAAI Conference on Artificial Intelligence (AAAI)},
+    year={2019}
+    }</pre>
+        <pre>@article{furuta2020pixelrl,
+    author={Ryosuke Furuta and Naoto Inoue and Toshihiko Yamasaki},
+    title={PixelRL: Fully Convolutional Network with Reinforcement Learning for Image Processing},
+    journal={IEEE Transactions on Multimedia (TMM)},
+    year={2020},
+    volume={22},
+    number={7},
+    pages={1704-1719}
+    }</pre>
+    </div>
+</div>
+
+
+
+
+        <!-- <footer class="footer">
+            <p>&copy; Ryosuke Furuta 2018</p>
+        </footer> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>
+
