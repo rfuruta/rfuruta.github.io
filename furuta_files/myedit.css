@@ -19,3 +19,25 @@ body {
 .img-max-height {
     max-height: 200px;
 }
+
+/* 国内会議: 折りたたみ（<details>） */
+details.collapsible-domestic {
+    margin-bottom: 0.5rem;
+}
+details.collapsible-domestic > summary {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+    line-height: 1.1;
+    cursor: pointer;
+    list-style-position: outside;
+}
+details.collapsible-domestic > summary::-webkit-details-marker {
+    color: #666;
+}
+details.collapsible-domestic[open] > summary {
+    margin-bottom: 8px;
+}
+details.collapsible-domestic > div {
+    padding-left: 0.25rem;
+}
